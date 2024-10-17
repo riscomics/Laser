@@ -99,12 +99,14 @@
       }
       .intro img {                     
         height: 315px;   
-        width: 100%px;
+        width: 100%;
         object-fit: cover;
       }
       .youtube {
         display: flex;
         justify-content: center;
+        width: 713.5px;
+        height: 315px;
         margin-top: 0px;
       }
       .splash {
@@ -173,6 +175,166 @@
         padding: 15px;
         margin-bottom: 20px;
       }
+      @media (max-width: 799px) {
+        
+      .footer {
+        width: 100%;
+        height: 28px;
+        color: aliceblue;
+        display: flex;
+        align-items: center;
+        background-color: #000000;
+      }
+      .footertext { 
+        width: 328px;
+        font-size: 12px; 
+      }      
+      .header {
+        width: 100%;
+        height: 59px;
+        display: flex;
+        flex-direction: row;        
+        justify-content: center;        
+        background-color: rgb(28, 49, 49);
+      }
+      .leftheader {
+        display: flex;
+        color: aliceblue;
+        font-size: 17px;
+        font-weight: bold;
+        font-family: arial;
+        width: 200px;
+        justify-content: center; 
+        margin-left: 10px; 
+        margin-right: 0px; 
+      }
+      .rightheader {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center;        
+        width: 149px;     
+        margin-left: 5px;   
+        margin-right: 10px;  
+      }
+      .headerbuttons {
+        color: aliceblue;
+        background-color: darkslategray;
+        border: none;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .headerbuttons:hover {
+        cursor: pointer;
+        background-color: rgb(30, 51, 51);
+      }      
+      .splash {
+        display: flex;
+        flex-direction: column; 
+        background-color: slategrey;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;        
+        height: 1149px;
+        width: 388px; 
+      }      
+      .subheader {
+        width: 388px;
+        height: 169px; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        margin-bottom: 0px;  
+      } 
+      .intro-text {
+        display: flex;
+        flex-direction: column;
+        color: aliceblue;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: rgb(145, 129, 250);
+        border-radius: 28px; 
+        text-align: center;
+        justify-content: center;
+        z-index: 5;
+        position: absolute;
+        height: 38px;
+        width: 154px;
+        left: 5px;
+        top: 125px;
+      }
+      .intro {
+        position: relative; 
+      }
+      .intro img {                     
+        height: 169px;   
+        width: 100%;
+        object-fit: cover;
+      }
+      .splash-text {
+        display: flex;
+        flex-direction: column;
+        color: aliceblue;
+        font-size: 13.5px;
+        background-color: darkslategray;
+        border-radius: 12px;  
+        justify-content: space-between;
+        line-height: 26px;
+        width: 349px;
+        height: 220px;
+        padding: 15px; 
+      }
+      .youtube {
+        display: flex;
+        justify-content: center;
+        width: 388px;
+        height: 215px;
+        margin-top: 0px; 
+      }
+      .splash-img1 {
+        display: flex;    
+        width: 388px;       
+        position: relative; 
+      }
+      .splash-img1 img {
+        width: 100%;
+        object-fit: cover;
+      } 
+      .splash-img2 {
+        display: flex;
+        width: 388px;
+        position: relative; 
+      }
+      .splash-img2 img {
+        width: 100%;
+        object-fit: cover;
+      } 
+      .splash-img3 {
+        display: flex;
+        width: 388px;
+        margin-bottom: 0px;
+        position: relative; 
+      }
+      .splash-img3 img {
+        width: 100%;
+        object-fit: cover;
+      } 
+      .splash-text2 {
+        display: flex;
+        flex-direction: column;
+        color: aliceblue;
+        font-size: 17px;
+        text-align: center;
+        background-color: darkslategray;
+        border-radius: 12px;  
+        justify-content: space-between;
+        line-height: 18px;
+        width: 288px;
+        height: 28px;
+        padding: 15px;
+        margin-bottom: 5px; 
+      }
+      }
     </style>
   </head>
 
@@ -209,7 +371,7 @@
         </div>
       </div>
       <div class="youtube">
-        <iframe width="713.5" height="315" 
+        <iframe class="youtube" 
           src="https://www.youtube.com/embed/pn86klcwcr8?si=qgmSUmkaTJFGITTh" 
           title="YouTube video player" frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
