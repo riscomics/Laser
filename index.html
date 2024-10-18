@@ -4,7 +4,7 @@
     <title>New Jersey Laser Restoration Services LLC</title>
     <style>
       body {        
-        background-color: darkslategrey;
+        background: linear-gradient(circle, darkslategrey 30%, lightgrey 100%);
         margin: 0;
         overflow: hidden; 
         overflow-y: scroll;
@@ -32,51 +32,91 @@
         height: 100%;
       }      
       .header {
-        width: 100%;
-        height: 49px;
-        display: flex;
-        flex-direction: row;        
-        justify-content: center;        
-        background-color: rgb(28, 49, 49);
+        display: flex; 
+        flex-direction: row;
+        width: 100%; 
+        justify-content: right;
+        background-color: #00162b; 
+        height: 500px;
+        position: relative;
+      }       
+      .header-title {
+        display: flex;  
+        flex-direction: column;      
+        width: 888px;  
+        z-index: 5;
+        top: 149px;
+        left: 0px;
+        margin-left: 328px;
+        position:absolute;
       }
-      .leftheader {
-        display: flex;
+      .header-title-text {
         color: aliceblue;
-        font-size: 25px;
+        font-size: 78px;
         font-weight: bold;
         font-family: arial;
-        width: 490px;
-        align-self: center;
-        justify-content: center; 
-        margin-right: 149px;
-      }
-      .rightheader {
+      } 
+      .header-menu {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;        
-        width: 168px;        
-        margin-right: 20px;  
+        width: 288px;     
+        height: 49px;      
+        margin-top: 68px;
       }
       .headerbuttons {
         color: aliceblue;
         background-color: darkslategray;
         border: none;
-        font-size: 17px;
+        border-radius: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 28px;
         font-weight: bold;
       }
       .headerbuttons:hover {
         cursor: pointer;
-        background-color: rgb(30, 51, 51);
-      }      
-      .subheader {
-        width: 100%;
-        height: 311px; 
-        display: flex; 
+        background-color: #00162b;
+      }   
+      .header img {        
+        object-fit: cover;
+        height: 500px;
+        position: relative;  
+      }
+  
+      .splash {
+        display: flex;
         flex-direction: column; 
+        background-color: rgb(20, 36, 36);
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;        
+        height: 368px;
+        width: 100%;  
+      }
+      .subheader {
+        width: 1000px;
+        height: 388px; 
+        display: flex; 
+        flex-direction: row; 
         align-items: center; 
         margin-bottom: 0px;
+        justify-content: space-between;
       } 
+      .splash-text {
+        display: flex;
+        flex-direction: column;
+        color: aliceblue;
+        font-size: 17px; 
+        background-color: darkslategray;
+        border-radius: 12px;  
+        justify-content: space-between;
+        line-height: 26px;
+        width: 388px;
+        height: 268px;
+        padding: 15px;
+      }
       .intro-text {
         display: flex;
         flex-direction: column;
@@ -91,50 +131,37 @@
         position: absolute;
         height: 68px;
         width: 250px;
-        left: -15px;
+        left: -115px;
         top: 228px;
       }
       .intro {
         position: relative; 
       }
       .intro img {                     
-        height: 315px;   
+        height: 100%;   
         width: 100%;
         object-fit: cover;
+      }
+      .splash2 {
+        display: flex;
+        flex-direction: column; 
+        background-color: #00162b;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;        
+        height: 1700px;
+        width: 100%;  
       }
       .youtube {
         display: flex;
         justify-content: center;
-        width: 713.5px;
-        height: 315px;
-        margin-top: 0px;
-      }
-      .splash {
-        display: flex;
-        flex-direction: column; 
-        background-color: slategrey;
-        margin: auto;
-        justify-content: space-between;
-        align-items: center;        
-        height: 1749px;
-        width: 828px; 
-      }
-      .splash-text {
-        display: flex;
-        flex-direction: column;
-        color: aliceblue;
-        font-size: 16px;
-        background-color: darkslategray;
-        border-radius: 12px;  
-        justify-content: space-between;
-        line-height: 26px;
-        width: 700px;
-        height: 149px;
-        padding: 15px;
+        width: 1000px;
+        height: 500px;
+        margin-top: 5px;
       }
       .splash-img1 {
         display: flex;    
-        width: 700px;       
+        width: 1000px;       
         position: relative;
       }
       .splash-img1 img {
@@ -143,7 +170,7 @@
       } 
       .splash-img2 {
         display: flex;
-        width: 700px;
+        width: 1000px;
         position: relative;
       }
       .splash-img2 img {
@@ -152,7 +179,7 @@
       } 
       .splash-img3 {
         display: flex;
-        width: 700px;
+        width: 1000px;
         margin-bottom: 0px;
         position: relative;
       }
@@ -175,82 +202,152 @@
         padding: 15px;
         margin-bottom: 20px;
       }
-      @media (max-width: 799px) {
-        
-      .footer {
-        width: 100%;
-        height: 28px;
-        color: aliceblue;
-        display: flex;
-        align-items: center;
-        background-color: #000000;
-      }
-      .footertext { 
-        width: 328px;
-        font-size: 12px; 
-      }      
+      @media (max-width: 1349px) {
+            
       .header {
-        width: 100%;
-        height: 59px;
-        display: flex;
-        flex-direction: row;        
-        justify-content: space-between;        
-        background-color: rgb(28, 49, 49);  
+        display: flex; 
+        flex-direction: row;
+        width: 100%; 
+        justify-content: right;
+        background-color: #00162b; 
+        height: 500px;
+        position: relative;
+      }       
+      .header-title {
+        display: flex;  
+        flex-direction: column;      
+        width: 888px;  
+        z-index: 5;
+        top: 149px;
+        left: 0px;
+        margin-left: 28px;
+        position:absolute;
       }
-      .leftheader {
-        display: flex;
+      .header-title-text {
         color: aliceblue;
-        font-size: 16px;
+        font-size: 78px;
         font-weight: bold;
         font-family: arial;
-        width: 178px;
-        justify-content: center; 
-        margin-left: 5px; 
-        margin-right: 5px;  
-      }
-      .rightheader {
+      } 
+      .header-menu {
         display: flex;
         flex-direction: row;
-        justify-content: space-between; 
+        justify-content: space-between;
         align-items: center;        
-        width: 149px;     
-        margin-left: 5px;   
-        margin-right: 5px;   
+        width: 288px;     
+        height: 49px;      
+        margin-top: 68px;
       }
       .headerbuttons {
         color: aliceblue;
         background-color: darkslategray;
         border: none;
-        font-size: 15px;
+        border-radius: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 28px;
         font-weight: bold;
       }
       .headerbuttons:hover {
         cursor: pointer;
-        background-color: rgb(30, 51, 51);
-      }      
+        background-color: #00162b;
+      }   
+      .header img {        
+        object-fit: cover;
+        height: 500px;
+        position: relative;  
+      }
+      }
+      @media (max-width: 799px) {        
+        .footer {
+          width: 100%;
+          height: 28px;
+          color: aliceblue;
+          display: flex;
+          align-items: center;
+          background-color: #000000;
+        }
+        .footertext { 
+          width: 328px;
+          font-size: 12px; 
+        }      
+      .header {
+        display: flex; 
+        flex-direction: row;
+        width: 100%;  
+        justify-content: right;
+        background-color: #00162b; 
+        height: 200px;
+        position: relative;
+      }       
+      .header-title {
+        display: flex;  
+        flex-direction: column;      
+        width: 288px;  
+        z-index: 5;
+        top: 49px;
+        left: 0px;
+        margin-left: 28px;
+        position:absolute;   
+      }
+      .header-title-text {
+        color: aliceblue;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: arial;
+      }  
+      .header img {        
+        height: 200px;
+        width: 368px;
+        position: relative;  
+      }
+      .header-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;        
+        width: 188px;     
+        height: 49px;      
+        margin-top: 15px;
+      }
+      .headerbuttons {
+        color: aliceblue;
+        background-color: darkslategray;
+        border: none;
+        border-radius: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .headerbuttons:hover {
+        cursor: pointer;
+        background-color: #00162b;
+      }  
       .splash {
         display: flex;
         flex-direction: column; 
-        background-color: slategrey;
+        background-color: rgb(20, 36, 36);
         margin: auto;
         justify-content: space-between;
         align-items: center;        
-        height: 1188px;
-        width: 388px; 
-      }      
+        height: 555px;
+        width: 100%;  
+      }
       .subheader {
         width: 388px;
-        height: 169px; 
+        height: 888px; 
         display: flex; 
         flex-direction: column; 
         align-items: center; 
-        margin-bottom: 0px;  
+        margin-top: 10px;
+        justify-content: space-between;
       } 
       .intro-text {
         display: flex;
         flex-direction: column;
         color: aliceblue;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
         background-color: rgb(145, 129, 250);
         border-radius: 28px; 
@@ -259,42 +356,54 @@
         z-index: 5;
         position: absolute;
         height: 38px;
-        width: 154px;
-        left: 5px;
-        top: 125px;
+        width: 128px;
+        left: -10px;
+        top: 168px;
       }
       .intro {
         position: relative; 
       }
       .intro img {                     
-        height: 169px;   
+        height: 100%;   
         width: 100%;
         object-fit: cover;
+        border-radius: 12px;
       }
       .splash-text {
         display: flex;
         flex-direction: column;
         color: aliceblue;
-        font-size: 14px;
+        font-size: 15px; 
         background-color: darkslategray;
         border-radius: 12px;  
         justify-content: space-between;
         line-height: 26px;
-        width: 338px;
+        width: 368px;
         height: 249px;
-        padding: 15px; 
+        padding: 10px;
+        margin-bottom: 12px;
+      }
+      .splash2 {
+        display: flex;
+        flex-direction: column; 
+        background-color: #00162b;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;        
+        height: 749px;
+        width: 100%;  
       }
       .youtube {
         display: flex;
         justify-content: center;
-        width: 388px;
-        height: 215px;
-        margin-top: 0px; 
+        width: 378px;
+        height: 200px;
+        border-radius: 12px;
       }
       .splash-img1 {
         display: flex;    
-        width: 388px;       
-        position: relative; 
+        width: 378px;       
+        position: relative;
       }
       .splash-img1 img {
         width: 100%;
@@ -302,8 +411,8 @@
       } 
       .splash-img2 {
         display: flex;
-        width: 388px;
-        position: relative; 
+        width: 378px;
+        position: relative;
       }
       .splash-img2 img {
         width: 100%;
@@ -311,9 +420,9 @@
       } 
       .splash-img3 {
         display: flex;
-        width: 388px;
+        width: 378px;
         margin-bottom: 0px;
-        position: relative; 
+        position: relative;
       }
       .splash-img3 img {
         width: 100%;
@@ -323,53 +432,61 @@
         display: flex;
         flex-direction: column;
         color: aliceblue;
-        font-size: 17px;
+        font-size: 18px;
         text-align: center;
         background-color: darkslategray;
         border-radius: 12px;  
-        justify-content: space-between;
-        line-height: 18px;
-        width: 268px;
-        height: 35px;
-        padding: 5px;
-        margin-bottom: 5px; 
+        justify-content: space-between; 
+        width: 228px;
+        height: 49px;
+        padding-top: 5px;  
+        padding-bottom: 5px; 
       }
       }
+
     </style>
   </head>
 
   <body>
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <div class="header">
-      <div class="leftheader">
-        New Jersey Laser Restoration Services
-      </div>
-      <div class="rightheader">
-        <a href="index.html"><button class="headerbuttons">Team</button></a>
-        <button class="headerbuttons">Get a Quote</button>
+        <div class="header-title">
+          <div class="header-title-text">New Jersey Laser <BR>Restoration Services
+          </div>
+          <div class="header-menu">
+            <a href="index.html"><button class="headerbuttons">Team</button></a>
+            <button class="headerbuttons">Get a Quote</button>
+          </div> 
+        </div>
+
+        <div>
+          <img src="Elements/laser-clear.png">
+        </div>       
       </div>
     </div>
 
-    <div class="splash">
-      <div class="subheader">
+    <div class="splash">   
+      <div class="subheader">        
         <div class="intro">
           <img src="Elements/1.jpg">
           <div class="intro-text">
             Servicing North & Central New Jersey
           </div>        
         </div>
-      </div>
-      <div class="splash-text">
-        <div>
-          Welcome to our Laser Restoration services! We specialize in eco-friendly and 
-        precise cleaning solutions for restoring surfaces without damaging the material underneath. 
-        </div> 
-        <div>
-          Using cutting-edge laser technology, we safely remove rust, grime, paint, and contaminants 
-        from metal, stone, wood, and more, with minimal waste and no harsh chemicals. Perfect for 
-        industrial cleaning, and delicate projects. 
+        <div class="splash-text">
+          <div>
+            Welcome to our Laser Restoration services! We specialize in eco-friendly and 
+          precise cleaning solutions for restoring surfaces without damaging the material underneath. 
+          </div> 
+          <div>
+            Using cutting-edge laser technology, we safely remove rust, grime, paint, and contaminants 
+          from metal, stone, wood, and more, with minimal waste and no harsh chemicals. Perfect for 
+          industrial cleaning, and delicate projects. 
+          </div>
         </div>
       </div>
+    </div>
+    <div class="splash2">
       <div class="youtube">
         <iframe class="youtube" 
           src="https://www.youtube.com/embed/pn86klcwcr8?si=qgmSUmkaTJFGITTh" 
