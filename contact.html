@@ -222,6 +222,10 @@
 
       @media (max-width: 1249px) {
 
+    }
+
+      @media (max-width: 799px){
+        
       .footer {
         width: 100%;
         height: 28px;
@@ -233,7 +237,7 @@
         display: flex; 
         align-items: center;
         font-size: 12px; 
-        width: 888px;
+        width: 100%;
         height: 100%;
       }      
       .header {
@@ -248,11 +252,11 @@
       .header-title {
         display: flex;  
         flex-direction: column;      
-        width: 888px;  
+        width: 100%;  
         z-index: 5;
         top: 28px;
         left: 0px;
-        margin-left: 388px;
+        margin-left: 8px;
         position:absolute;
       }
       .header-title-text {
@@ -278,210 +282,6 @@
         padding-left: 10px;
         padding-right: 10px;
         font-size: 28px;
-        font-weight: bold;
-      }
-      .headerbuttons:hover {
-        cursor: pointer;
-        background-color: #00162b;
-      }   
-      .header img {        
-        object-fit: cover;
-        height: 249px;
-        position: relative;   
-      }  
-      .splash {
-        display: flex;
-        flex-direction: column; 
-        background-color: rgb(20, 36, 36);
-        margin: auto;
-        justify-content: space-between;
-        align-items: center;        
-        height: 100%;
-        width: 100%; 
-      }
-      .subheader {
-        width: 749px;
-        height: 455px; 
-        display: flex; 
-        flex-direction: row; 
-        align-items: center; 
-        margin-bottom: 0px;
-        justify-content: space-between;    
-      } 
-      .splash-text {
-        display: flex;
-        flex-direction: column;
-        color: aliceblue;
-        font-size: 15px; 
-        background-color: #4b505a;
-        border-radius: 12px;  
-        justify-content: space-between;
-        line-height: 23px;
-        width: 188px;
-        height: 200px;
-        padding: 15px;
-        margin-right: 0px;        
-      }
-      .intro-text {
-        display: flex;
-        flex-direction: column;
-        color: aliceblue;
-        font-size: 21px;
-        font-weight: bold;
-        background-color: rgb(145, 129, 250);
-        border-radius: 28px; 
-        text-align: center;
-        justify-content: center;
-        z-index: 5;
-        position: absolute;
-        height: 68px;
-        width: 250px;
-        left: -115px;
-        top: 228px;
-      }
-      .form {
-        width: 520px;
-        height: 410px;
-        display: flex;
-        flex-direction: column; 
-        background-color: #00162b;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-right: 5px;
-        border-radius: 15px; 
-      }
-      .form-title {
-        display: flex;
-        color: rgb(214, 221, 228);
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 15px;
-        margin-left: 15px;
-      }
-      .field1 {
-        width: 228px;
-        height: 28px;
-        border-radius: 5px;
-        border: none;
-        color: #4b505a;
-        background-color: cadetblue;
-        margin-top: 20px;
-        margin-left: 15px;
-        display: flex;
-        padding-left: 10px;
-      }
-      .field2 {
-        width: 388px;
-        height: 228px;
-        border-radius: 5px;
-        border: none;
-        color: #4b505a;
-        background-color: cadetblue;
-        margin-top: 20px;
-        margin-left: 15px;
-        display: flex; 
-        font-size: 14px;
-        padding-top: 10px;
-        padding-left: 10px; 
-      }
-      .input-fields {
-        display: flex;
-        flex-direction: row;
-        width: 500px;
-        height: 49px;
-      }
-      .input-fields2 {
-        display: flex;
-        flex-direction: row; 
-        width: 500px;
-        height: 259px;
-        align-items: center;
-        justify-content: space-between; 
-      }
-      .send-button {
-        height: 49px;
-        width: 68px;
-        font-size: 15px;
-        font-weight: bold;
-        color: aliceblue;
-        background-color: rgb(145, 75, 75);
-        border-radius: 6px;
-        border: none;
-      }
-      .send-button:hover {
-        cursor: pointer;
-        color: #000000;
-        background-color: cadetblue;
-      }
-      .foot-banner {
-        display: flex; 
-        width: 100%; 
-        height: 259px; 
-        background-color: #00162b;        
-      }
-      .foot-banner img {
-        margin: auto;
-        object-fit: cover;
-      }
-    }
-
-      @media (max-width: 799px) {
-      .footer {
-        width: 100%;
-        height: 28px;
-        color: aliceblue;
-        background-color: #000000;
-      }
-      .footertext {
-        margin: auto;
-        display: flex; 
-        align-items: center;
-        font-size: 12px; 
-        width: 888px;
-        height: 100%;
-      }      
-      .header {
-        display: flex; 
-        flex-direction: row;
-        width: 100%; 
-        justify-content: right;
-        background-color: #00162b; 
-        height: 200px;
-        position: relative; 
-      }       
-      .header-title {
-        display: flex;  
-        flex-direction: column;      
-        width: 888px;  
-        z-index: 5;
-        top: 49px;
-        left: 0px;
-        margin-left: 28px;
-        position:absolute;
-      }
-      .header-title-text {
-        color: aliceblue;
-        font-size: 25px;
-        font-weight: bold;
-        font-family: arial;
-      } 
-      .header-menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;        
-        width: 138px;     
-        height: 49px;      
-        margin-top: 15px;
-      }
-      .headerbuttons {
-        color: aliceblue;
-        background-color: #4b505a;
-        border: none;
-        border-radius: 6px;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 17px;
         font-weight: bold;
       }
       .headerbuttons:hover {
@@ -657,7 +457,7 @@
           <div class="form-title">
             Contact Us For a Free Quote!
           </div>
-          <input type="hidden" name="access_key" value="4185ec1f-f29e-4375-b7dc-c9bd68924d39">
+          <input type="hidden" name="access_key" value="6347240a-fc18-401b-a746-d545ef7aa726">
           <div class="input-fields">
             <input class="field1" type="text" name="name" placeholder="Name">
             <input class="field1" type="email" name="email" placeholder="E-mail">            
